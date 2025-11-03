@@ -6,6 +6,36 @@
     <title>Abubakar Gaming PC - India's #1 Gaming PC Builder | RTX 5090 | Mumbai</title>
     <meta name="description" content="India's #1 Gaming PC Builder in Mumbai. Custom Gaming PCs with RTX 5090, 5 Year Warranty, Free Delivery. AI-Powered Builds, Data Recovery Services.">
     
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="your-verification-code">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Abubakar Gaming PC",
+      "description": "India's #1 Gaming PC Builder in Mumbai - Custom Gaming PCs with RTX 5090",
+      "url": "https://sayyedabubakar765-lang.github.io/abubakar-pc-store/",
+      "telephone": "+91-9890986939",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop No. 25, Andheri East",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400069",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "19.1171",
+        "longitude": "72.8550"
+      },
+      "openingHours": "Mo-Su 10:00-22:00",
+      "priceRange": "₹45,000 - ₹3,00,000"
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -340,6 +370,59 @@
             color: var(--accent);
         }
 
+        /* Payment Section */
+        .payment-section {
+            background: linear-gradient(135deg, var(--dark), #2d1b69);
+            padding: 6rem 2rem;
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .payment-method {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #333;
+        }
+
+        .payment-method:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .payment-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .upi-qr {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 2rem 0;
+        }
+
+        .upi-qr img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
         /* Services Section */
         .services-grid {
             display: grid;
@@ -530,6 +613,10 @@
             .pc-card.best-seller:hover {
                 transform: translateY(-15px);
             }
+
+            .payment-methods {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 480px) {
@@ -551,6 +638,10 @@
 
             .stat-number {
                 font-size: 2rem;
+            }
+
+            .payment-icon {
+                font-size: 2.5rem;
             }
         }
 
@@ -611,6 +702,7 @@
                 <a href="#home">Home</a>
                 <a href="#builds">Gaming PCs</a>
                 <a href="#services">Services</a>
+                <a href="#payment">Payment</a>
                 <a href="#recovery">Data Recovery</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -719,6 +811,63 @@
         </div>
     </section>
 
+    <!-- Payment Section -->
+    <section class="payment-section" id="payment">
+        <h2 class="section-title" style="color: white;">💳 Payment Methods</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Multiple secure payment options available. 50% advance for PC building, balance on delivery.
+        </p>
+
+        <div class="payment-methods">
+            <div class="payment-method fade-in">
+                <div class="payment-icon">📱</div>
+                <h3>UPI Payments</h3>
+                <p>Google Pay, PhonePe, Paytm</p>
+                <p style="color: var(--accent); font-weight: bold;">Instant Transfer</p>
+            </div>
+
+            <div class="payment-method fade-in">
+                <div class="payment-icon">🏦</div>
+                <h3>Bank Transfer</h3>
+                <p>IMPS, NEFT, RTGS</p>
+                <p style="color: var(--accent); font-weight: bold;">2-4 Hours</p>
+            </div>
+
+            <div class="payment-method fade-in">
+                <div class="payment-icon">💵</div>
+                <h3>Cash Payment</h3>
+                <p>Cash on Delivery</p>
+                <p style="color: var(--accent); font-weight: bold;">Mumbai Only</p>
+            </div>
+
+            <div class="payment-method fade-in">
+                <div class="payment-icon">💳</div>
+                <h3>Digital Wallet</h3>
+                <p>Paytm, MobiKwik</p>
+                <p style="color: var(--accent); font-weight: bold;">Instant</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem;">
+            <div class="upi-qr">
+                <!-- Replace with your actual UPI QR code -->
+                <div style="width: 200px; height: 200px; background: linear-gradient(45deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; border-radius: 10px;">
+                    UPI QR Code
+                </div>
+            </div>
+            <p style="margin-top: 1rem; font-size: 1.2rem;">
+                <strong>UPI ID: 9890986939@ybl</strong><br>
+                Scan to Pay via Any UPI App
+            </p>
+        </div>
+
+        <div style="margin-top: 3rem;">
+            <a href="https://wa.me/919890986939?text=Payment%20related%20query%20है" class="cta-button" style="background: var(--accent); color: var(--dark);">
+                💬 Payment Help
+            </a>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="section" id="services">
         <h2 class="section-title">Professional Services</h2>
@@ -802,8 +951,8 @@
                 <h3>Quick Links</h3>
                 <p><a href="#builds" style="color: white; text-decoration: none;">PC Builder</a></p>
                 <p><a href="#services" style="color: white; text-decoration: none;">Services</a></p>
+                <p><a href="#payment" style="color: white; text-decoration: none;">Payment</a></p>
                 <p><a href="#recovery" style="color: white; text-decoration: none;">Data Recovery</a></p>
-                <p><a href="#contact" style="color: white; text-decoration: none;">Support</a></p>
             </div>
             <div class="footer-section">
                 <h3>Business Hours</h3>
@@ -902,6 +1051,7 @@
         // Console log for debugging
         console.log('🚀 Abubakar Gaming PC Website Loaded Successfully!');
         console.log('📞 Contact: +91-9890986939');
+        console.log('💳 UPI ID: 9890986939@ybl');
         console.log('🌐 Website: https://sayyedabubakar765-lang.github.io/abubakar-pc-store/');
     </script>
 </body>
