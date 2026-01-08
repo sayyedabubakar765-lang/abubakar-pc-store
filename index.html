@@ -1,9 +1,85 @@
 <!DOCTYPE html>
-<html>
-<head><title>HACKED BY ABUBAKAR</title></head>
-<meta property="og:image" content="https://your-image-url.jpg">
-<body style="background:black;color:red;text-align:center;padding-top:20%;">
-    <h1>SYSTEM HACKED BY ABUBAKAR</h1>
-    <p style="color:white;">Security is just an illusion.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abubakar PC Store - Hardware Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #f3f4f6; color: #1f2937; font-family: 'Inter', sans-serif; }
+        .service-card:hover { transform: translateY(-10px); transition: 0.3s; }
+        .login-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100; justify-content: center; align-items: center; }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
+        <h1 class="text-2xl font-bold text-blue-600">ABUBAKAR <span class="text-gray-800">PC STORE</span></h1>
+        <div class="space-x-4">
+            <button onclick="showLogin()" class="text-gray-600 font-medium">Login</button>
+            <a href="https://wa.me/919325743596" class="bg-blue-600 text-white px-5 py-2 rounded-full font-bold">Book Repair</a>
+        </div>
+    </nav>
+
+    <section class="bg-blue-600 text-white py-20 px-10 text-center">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-4">India's Most Trusted PC Repair</h2>
+        <p class="text-xl mb-8">Professional Hardware & Chip-Level Repairing at Your Doorstep.</p>
+        <div class="flex justify-center gap-4">
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold shadow-lg">View Services</button>
+        </div>
+    </section>
+
+    <section class="p-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="service-card bg-white p-6 rounded-2xl shadow-lg border-b-4 border-blue-600">
+            <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=400" class="rounded-lg mb-4">
+            <h3 class="text-xl font-bold">Laptop Motherboard Repair</h3>
+            <p class="text-gray-500 mb-4">Fixing dead laptops & short circuits.</p>
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-blue-600">₹1,499</span>
+                <button onclick="orderNow('Laptop Repair', '1499')" class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold">Order Now</button>
+            </div>
+        </div>
+
+        <div class="service-card bg-white p-6 rounded-2xl shadow-lg border-b-4 border-blue-600">
+            <img src="https://images.unsplash.com/photo-1555617766-c94804975da3?w=400" class="rounded-lg mb-4">
+            <h3 class="text-xl font-bold">Data Recovery</h3>
+            <p class="text-gray-500 mb-4">Recover deleted data from HDD/SSD.</p>
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-blue-600">₹999</span>
+                <button onclick="orderNow('Data Recovery', '999')" class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold">Order Now</button>
+            </div>
+        </div>
+
+        <div class="service-card bg-white p-6 rounded-2xl shadow-lg border-b-4 border-blue-600">
+            <img src="https://images.unsplash.com/photo-1544244015-0cd4b3ffc6b0?w=400" class="rounded-lg mb-4">
+            <h3 class="text-xl font-bold">iPad/MacBook Screen</h3>
+            <p class="text-gray-500 mb-4">Original screen replacement.</p>
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-blue-600">₹4,999</span>
+                <button onclick="orderNow('Screen Replace', '4999')" class="bg-green-500 text-white px-4 py-2 rounded-lg font-bold">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="loginModal" class="login-modal">
+        <div class="bg-white p-8 rounded-2xl w-96 shadow-2xl relative">
+            <button onclick="closeLogin()" class="absolute top-4 right-4 text-gray-400">X</button>
+            <h2 class="text-2xl font-bold mb-6 text-center">Customer Login</h2>
+            <input type="text" placeholder="Mobile Number" class="w-full border p-3 rounded-lg mb-4">
+            <input type="password" placeholder="Password" class="w-full border p-3 rounded-lg mb-4">
+            <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold">Sign In</button>
+        </div>
+    </div>
+
+    <script>
+        function showLogin() { document.getElementById('loginModal').style.display = 'flex'; }
+        function closeLogin() { document.getElementById('loginModal').style.display = 'none'; }
+        
+        function orderNow(item, price) {
+            let msg = "Hello Abubakar! I want to order: " + item + " (Price: ₹" + price + "). Please confirm.";
+            window.location.href = "https://wa.me/919325743596?text=" + encodeURIComponent(msg);
+        }
+    </script>
 </body>
 </html>
